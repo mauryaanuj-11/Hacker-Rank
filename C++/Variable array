@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() 
+{
+    int i,k,j,q,n;
+    cin>>n>>q;
+    int *arr[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>k;
+         arr[i]=(int*)malloc(k*sizeof(int));
+        for(j=0;j<k;j++)
+           cin>>arr[i][j];
+    }
+    
+    for(i=0;i<q;i++)
+    {
+        int x,y;
+        cin>>x>>y;
+        cout<<arr[x][y]<<"\n";
+    }
+}
